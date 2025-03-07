@@ -52,15 +52,28 @@ model = CogRepLKNet(use_kan=True, pretrained=False, save_feature=True)
 ```
 The `image-1k-cognitive.pth` weights are pretrained on the ImageNet-1K dataset and fine-tuned on our cognitive workload dataset.
 
+In the unireplknet file we provided, only a portion of the code is provided, and the complete code can be accessed by UniRepLKNet, the author of the underlying model. When running and using our code, please make sure to keep the file intact.
+
 We have intentionally omitted the code for replicating comparative methods out of respect for the original authors.
 
 ## Acknowledgements
 
-We express our gratitude to Ding et al. for their foundational contributions, which facilitated our model development. If you are interested in Large-Kernel Dilated Convolutions, please visit [UniRepLKNet GitHub](https://github.com/AILab-CVC/UniRepLKNet).
+We express our gratitude to Ding et al. for their foundational contributions, which facilitated our model development. If you are interested in Large-Kernel Dilated Convolutions, please visit [UniRepLKNet GitHub](https://github.com/AILab-CVC/UniRepLKNet). 
 
 Special thanks to all co-authors and contributors who supported this research.
 
 ## Open Source License
 
-This project is open-sourced under the XXX license.
-
+This project is open-sourced under the Apache License 2.0. Please cite our previous work using the following references if you find it helpful:
+```
+@ARTICLE{10559607,
+  author={Shao, Yang and Zhou, Yueying and Gong, Peiliang and Sun, Qianru and Zhang, Daoqiang},
+  journal={IEEE Transactions on Neural Systems and Rehabilitation Engineering}, 
+  title={A Dual-Adversarial Model for Cross-Time and Cross-Subject Cognitive Workload Decoding}, 
+  year={2024},
+  volume={32},
+  number={},
+  pages={2324-2335},
+  keywords={Feature extraction;Brain modeling;Adaptation models;Electroencephalography;Task analysis;Machine learning;Decoding;Cognitive workload decoding;electroencephalogram (EEG);joint domain adaptation;adversarial learning;cross-time;cross-subject},
+  doi={10.1109/TNSRE.2024.3415364}}
+```
