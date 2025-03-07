@@ -21,8 +21,7 @@ CogRepLKNet comprises two Universal Perception Modules (UPM) branches, Adaptive 
 
 ## Code Architecture
 
-Our code is publicly available under the XXX license and can be found in the `CogRepLKNet` directory.
-
+Our code is publicly available under the apache 2.0 license and can be found in the `CogRepLKNet` directory.
 Our experiments cover binary and four-class classification tasks, each evaluated using different metrics. To enhance readability, these tasks are implemented in two separate files: `run_for_2.py` and `run_for_4.py`.
 
 Before running the code, please complete the following steps:
