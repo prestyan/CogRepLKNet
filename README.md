@@ -6,7 +6,7 @@ Our multimodal cognitive workload dataset was collected using a working memory e
 
 ## Introduction
 
-![Sample Image](https://example.com/image.png)
+![CogRepLKNet Architecture](./模型架构图.pdf)
 
 The application of re-parameterizable Large-Kernel CNNs in human Cognitive Workload Recognition (CWR) remains underexplored. Compared with the widely-used Transformer architecture, Large-Kernel CNNs require fewer training samples and possess the capability to capture long-range dependencies, which conventional CNNs lack. Leveraging the robust general feature extraction capabilities of re-parameterizable LK CNNs, we introduce CogRepLKNet, a universal re-parameterizable LK CNN designed specifically for multimodal modeling of Electroencephalography (EEG) and Functional Magnetic Resonance Imaging (fMRI) physiological data. This architecture is validated on our custom-collected dataset.
 
