@@ -56,6 +56,17 @@ In the unireplknet file we provided, only a portion of the code is provided, and
 
 We have intentionally omitted the code for replicating comparative methods out of respect for the original authors.
 
+## Data
+### Introduction to our self-built EEG-fMRI dataset:
+The experiment collected cognitive workload data induced by a WM task from 30 participants, including 14 females and 16 males. This experiment induced varying levels of cognitive workload using N-back WM tasks with different difficulty levels. Eeach participant underwent three phases: resting state, pre-training, and the WM task. The resting state phase lasted for 480 seconds, while each trial, consisting of an inter-trial interval and the WM task, lasted approximately 8.5 seconds. Participants completed multiple trials throughout the experiment.
+
+In this experiment, EEG data were acquired using a 32-lead brain cap from Brain Products, Germany, while fMRI data were acquired using a Siemens magnetic resonance imaging device with TR=2s.
+
+After preprocessing, the EEG data format changed to Session 1: $30 \times 240 \times 30 \times 500$ and Session 2: $19 \times 240 \times 30 \times 500$ (some subjects did not participate in Session 2 acquisition). The four dimensions are $subjects \times samples \times channels \times time$. The fMRI data became Session 1: $30 \times 240 \times 4 \times 116$ and Session 2: $19 \times 240 \times 4 \times 116$ after extracting ROI signals, whose dimensions denote $subjects \times samples \times time \times brain\,\, regions$.
+
+### How to get it:
+Our dataset has been rigorously experimentally verified in the paper to prove its effectiveness and usability. In principle, we hope to make the dataset public, but since it involves the privacy data of the subjects, you can contact the [corresponding author](mailto:dqzhang@nuaa.edu.cn) to request the data and we will check it.
+
 ## Acknowledgements
 
 We express our gratitude to Ding et al. for their foundational contributions, which facilitated our model development. If you are interested in Large-Kernel Dilated Convolutions, please visit [UniRepLKNet GitHub](https://github.com/AILab-CVC/UniRepLKNet). 
